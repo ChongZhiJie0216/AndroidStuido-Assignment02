@@ -1,9 +1,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.AndroidStuidoAssignmentGROUP03" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.GroupTesting1" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.AndroidStuidoAssignmentGROUP03" parent="Base.Theme.AndroidStuidoAssignmentGROUP03" />
+    <style name="Theme.GroupTesting1" parent="Base.Theme.GroupTesting1" />
 </resources>

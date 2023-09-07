@@ -13,5 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "AndroidStuido-Assignment-GROUP03"
+rootProject.name = "groupTesting1"
 include(":app")
+ 

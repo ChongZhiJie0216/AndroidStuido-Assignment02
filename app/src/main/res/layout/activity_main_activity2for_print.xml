@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ShoppingListActivity">
+
+  <!-- 购物清单标题 -->
+  <TextView
+      android:id="@+id/shoppingListTitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/list"
+      android:textSize="18sp"
+      android:textStyle="bold" />
+
+  <TextView
+      android:id="@+id/name"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/name" />
+
+  <TextView
+      android:id="@+id/vvalue"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/valuee" />
+
+  <TextView
+      android:id="@+id/price"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/textview" />
+
+  <TextView
+      android:id="@+id/total"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/total" />
+
+  <Spinner
+      android:id="@+id/spinner"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp" />
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1" />
+
+  <Button
+      android:id="@+id/firstpage"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Payment" />
+
+  <!-- 购物清单内容 -->
+
+</LinearLayout>
