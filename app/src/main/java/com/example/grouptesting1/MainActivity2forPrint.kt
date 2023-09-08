@@ -25,8 +25,8 @@ class MainActivity2forPrint : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_activity2for_print)
 
-        // 从Intent中获取传递的数据
-        val quantity = intent.getIntExtra("quantity_key", 0) // 默认值为0
+        // Retrieve data passed from the Intent.
+            val quantity = intent.getIntExtra("quantity_key", 0) // Default value is 0.
         val price = intent.getDoubleExtra("price_key", 0.0)
         val itemName = intent.getStringExtra("item_name_key")
 
@@ -39,44 +39,44 @@ class MainActivity2forPrint : AppCompatActivity() {
 
         nameTextView.text = "Item Name: $itemName"
         valueTextView.text = "Quantity: $quantity"
-        priceTextView.text = "Price: MYR %.2f".format(price) // 修正字符串格式化
-        totalTextView.text = "Total: MYR %.2f".format(totalprice) // 修正字符串格式化
-
-        // 获取firstpage按钮
+        priceTextView.text = "Price: MYR %.2f".format(price) // Correct string formatting.
+        totalTextView.text = "Total: MYR %.2f".format(totalprice) // Correct string formatting.
+        // Get the firstpage button.
         val firstPageButton = findViewById<Button>(R.id.firstpage)
 
         firstPageButton.setOnClickListener {
-            // 创建通知渠道
+            // Create a notification channel.
+
             createNotificationChannel()
 
-            // 创建通知
+            // Create a notification.
             val notification = NotificationCompat.Builder(this, channelID)
                 .setSmallIcon(R.drawable.ic_launcher_foreground)
                 .setContentTitle("Payment Done")
                 .setContentText("Thank you for your payment.")
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT)
-                .setAutoCancel(true) // 单击通知后自动取消
+                .setAutoCancel(true) // Automatically dismiss on notification click.
                 .build()
 
-            // 显示通知
+            // Display the notification.
             val notificationManager =
                 getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
             notificationManager.notify(0, notification)
 
-            // 返回到MainActivity
+            // Return to MainActivity.
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 
-        // 获取Spinner
+        // Get the Spinner.
         val spinner = findViewById<Spinner>(R.id.spinner)
 
-        // 创建一个适配器并设置数据
+        // Create an adapter and set the data.
         val data = listOf("Option 1", "Option 2", "Option 3")
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, data)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
 
-        // 设置适配器到Spinner
+        // Set the adapter to the Spinner.
         spinner.adapter = adapter
     }
 

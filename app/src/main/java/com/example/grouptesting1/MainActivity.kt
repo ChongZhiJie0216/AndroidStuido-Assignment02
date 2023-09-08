@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         val itemDescriptionTextView = findViewById<TextView>(R.id.itemD)
         val itemPriceTextView = findViewById<TextView>(R.id.itemPrice)
 
-        // 在Kotlin代码中找到RadioButton的实例
+        // Find an instance of RadioButton in Kotlin code.
         val radioButton1 = findViewById<RadioButton>(R.id.radioButton1)
         val radioButton2 = findViewById<RadioButton>(R.id.radioButton2)
 
@@ -40,15 +40,15 @@ class MainActivity : AppCompatActivity() {
 
         plusButton.setOnClickListener {
             values++
-            // 更新值视图
+            // Update the value view.
             valuesTextView.text = values.toString()
         }
 
-        // 减号按钮点击事件
+        // Minus button click event.
         negatifButton.setOnClickListener {
             if (values > 0) {
                 values--
-                // 更新值视图
+                // Update the value view.
                 valuesTextView.text = values.toString()
             }
 
@@ -56,8 +56,7 @@ class MainActivity : AppCompatActivity() {
         val buyButton = findViewById<Button>(R.id.buy)
 
         buyButton.setOnClickListener {
-            // 这里放置启动下一页的代码
-
+            // Place the code here to initiate the next page.
             val intent = Intent(this, MainActivity2forPrint::class.java)
             intent.putExtra("quantity_key", values)
             intent.putExtra("price_key", itemPrice)
