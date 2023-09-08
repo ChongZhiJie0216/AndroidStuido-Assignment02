@@ -82,7 +82,7 @@ class MainActivity2forPrint : AppCompatActivity() {
 
     @RequiresApi(Build.VERSION_CODES.O)
     private fun createNotificationChannel() {
-        // 创建通知渠道
+        // Create a notification channel.
         val name = "Payment Channel"
         val descriptionText = "Channel for payment notifications"
         val importance = NotificationManager.IMPORTANCE_DEFAULT
@@ -92,7 +92,7 @@ class MainActivity2forPrint : AppCompatActivity() {
             lightColor = Color.RED
         }
 
-        // 注册通知渠道
+        // Register the notification channel.
         val notificationManager =
             getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
         notificationManager.createNotificationChannel(channel)
