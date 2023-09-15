@@ -1,4 +1,4 @@
-package com.example.grouptesting1.ui.theme
+package com.example.androidstuido_assignment_group03.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

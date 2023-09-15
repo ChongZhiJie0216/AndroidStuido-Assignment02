@@ -1,4 +1,4 @@
-package com.example.grouptesting1
+package com.example.androidstuido_assignment_group03
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.RadioButton
 import android.widget.TextView
+import com.example.grouptesting1.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

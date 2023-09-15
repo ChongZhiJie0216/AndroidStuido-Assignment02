@@ -14,12 +14,12 @@
         android:theme="@style/Theme.GroupTesting1"
         tools:targetApi="31" >
         <activity
-            android:name=".MainActivity2forPrint"
+            android:name="com.example.androidstuido_assignment_group03.MainActivity2forPrint"
             android:exported="false"
             android:label="@string/title_activity_main_activity2for_print"
             android:theme="@style/Theme.GroupTesting1" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.androidstuido_assignment_group03.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,4 +1,4 @@
-package com.example.grouptesting1
+package com.example.androidstuido_assignment_group03
 
 class item {
      class Item(
